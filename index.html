@@ -1,0 +1,104 @@
+<html>
+<head>
+  <title>Index</title>
+  <style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.marquee {  
+ overflow: hidden;
+ position: relative;
+ background-color: red;
+ color: #ffffff;
+}
+.marquee p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 8.5;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);    
+ transform:translateX(100%);
+ /* Apply animation to this element */  
+ -moz-animation: scroll-left 1s linear infinite;
+ -webkit-animation: scroll-left 1s linear infinite;
+ animation: scroll-left 1s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%);       
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+
+
+
+
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 84px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+</style>
+</head>
+<body>
+<div class="marquee">
+<marquee   behavior="scroll" direction="left">  <h1>SOMONU MOBILE</h1></marquee>
+</div>
+  <div class="center">
+   <div class="vertical-center">
+ <button class="button" onclick="window.location.href = 'https://wa.me/message/MUIZ2ZUQ6Y7EE1';">SHOP NOW</button>
+ 
+</div>
+</body>
+</html>
